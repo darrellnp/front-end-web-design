@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Swiper -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/final1.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">memo<span>coffee</span>.</a>
+      <div class="navbar-nav">
+        <a href="final.html">Home</a>
+        <a href="final.html">About us</a>
+        <a href="#menu">Menu</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2>Our <span>Menu</span></h2>
+      <p>
+        Explore our diverse menu—exquisite brews, and delightful treats to
+        elevate your coffee experience.
+      </p>
+      <div class="row">
+        <div class="menu-card">
+          <img src="images/menu.jpg" alt="Espresso" class="menu-card-image" />
+          <h3 class="menu-card-title">- Espresso -</h3>
+          <p class="menu-card-price">NT$60</p>
+        </div>
+        <div class="menu-card">
+          <img src="images/menu-1.jpg" alt="Latte" class="menu-card-image" />
+          <h3 class="menu-card-title">- Cafe Latte -</h3>
+          <p class="menu-card-price">NT$70</p>
+        </div>
+        <div class="menu-card">
+          <img src="images/menu-1.jpg" alt="Latte" class="menu-card-image" />
+          <h3 class="menu-card-title">- Vanilla Latte -</h3>
+          <p class="menu-card-price">NT$75</p>
+        </div>
+        <div class="menu-card">
+          <img src="images/menu-1.jpg" alt="Latte" class="menu-card-image" />
+          <h3 class="menu-card-title">- Caramel Latte -</h3>
+          <p class="menu-card-price">NT$75</p>
+        </div>
+        <div class="menu-card">
+          <img src="images/menu-1.jpg" alt="Latte" class="menu-card-image" />
+          <h3 class="menu-card-title">- Hazelnut Latte -</h3>
+          <p class="menu-card-price">NT$75</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End -->
+    <!-- Swiper Start -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/bg-main.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="images/swiper.jpg" alt="" /></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Swiper End -->
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/darrell.np/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://www.facebook.com/darrell.nathaniel.7/"
+          ><i data-feather="facebook"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/darrell-nathaniel-prayogi-73b1b824b/"
+          ><i data-feather="linkedin"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="final.html">Home</a>
+        <a href="final.html">About Us</a>
+        <a href="#menu">Menu</a>
+      </div>
+      <div class="credit">
+        <p>Created by <span>darrellnp.</span> | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- JS -->
+    <script src="js/final.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 2000,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
