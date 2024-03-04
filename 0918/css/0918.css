@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap");
+
+html,
+body {
+  font-family: "Noto Serif TC", serif;
+  background: radial-gradient(
+    circle,
+    rgba(26, 34, 52, 1) 0%,
+    rgba(51, 65, 85, 1) 56%
+  );
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+section,
+article,
+footer {
+  text-align: center;
+}
+header {
+  color: white;
+}
+/*nav*/
+nav {
+  background: #14b8a6;
+  padding: 20px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav li a {
+  color: black;
+  text-decoration: none; /*將底線去除*/
+  background: #14b8a6;
+  padding: 20px;
+  transition: ease-in-out 0.5s;
+}
+
+nav li a:hover {
+  color: white;
+}
+
+.title {
+  color: white;
+}
+/* section */
+section {
+  width: 80%; /*可隨視窗大小調整*/
+  margin: auto; /*物件置中*/
+}
+
+/*article*/
+article {
+  display: inline-block;
+  /*設定寬度，否則會以內容元素中最寬的元素寬度作為預設*/
+  width: 180px;
+  height: 290px;
+  /*設定邊寬作為檢視*/
+  border: solid 2px #ddd;
+  border-radius: 10%;
+  margin: 20px;
+  transition: ease-in-out 1s;
+}
+
+article:hover {
+  background: #14b8a6;
+  color: #fff;
+  /*cursor: pointer; 設定滑鼠游標*/
+}
+
+article:active {
+  background: #fc0;
+  color: #000;
+}
+
+.article_a {
+  color: white;
+}
+footer {
+  color: white;
+}

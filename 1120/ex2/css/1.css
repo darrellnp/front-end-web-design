@@ -1,0 +1,53 @@
+/*aside*/
+aside {
+  float: left;
+  height: 480px;
+  width: 200px;
+}
+
+.box {
+  width: 200px;
+  height: 160px;
+  font-size: 100px;
+  background: #0cf;
+}
+
+.box:hover {
+  background: #36f;
+  cursor: pointer;
+}
+
+.ch_bg {
+  background: #36f;
+}
+
+/*section*/
+section {
+  position: relative;
+  float: left;
+  height: 480px;
+  width: 480px;
+  background: #ddd;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 480px;
+  height: 480px;
+  background: #f60;
+  display: none;
+}
+.yel {
+  width: 480px;
+  height: 480px;
+  background: #ff0;
+  display: none;
+}
+.pink {
+  width: 480px;
+  height: 480px;
+  background: #f3c;
+  display: none;
+}
